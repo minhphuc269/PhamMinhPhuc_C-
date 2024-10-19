@@ -1,0 +1,16 @@
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\bin\Debug\net8.0-windows\Article08.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\bin\Debug\net8.0-windows\Article08.deps.json
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\bin\Debug\net8.0-windows\Article08.runtimeconfig.json
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\bin\Debug\net8.0-windows\Article08.dll
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\bin\Debug\net8.0-windows\Article08.pdb
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\Article08.Form1.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\Article08.csproj.GenerateResource.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\Article08.GeneratedMSBuildEditorConfig.editorconfig
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\Article08.AssemblyInfoInputs.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\Article08.AssemblyInfo.cs
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\Article08.csproj.CoreCompileInputs.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\Article08.dll
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\refint\Article08.dll
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\Article08.pdb
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\Article08.genruntimeconfig.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article08\obj\Debug\net8.0-windows\ref\Article08.dll

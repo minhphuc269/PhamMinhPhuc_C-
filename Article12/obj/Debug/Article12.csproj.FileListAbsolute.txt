@@ -1,0 +1,10 @@
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\bin\Debug\Article12.exe.config
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\bin\Debug\Article12.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\bin\Debug\Article12.pdb
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\obj\Debug\Article12.csproj.AssemblyReference.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\obj\Debug\Article12.Form1.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\obj\Debug\Article12.Properties.Resources.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\obj\Debug\Article12.csproj.GenerateResource.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\obj\Debug\Article12.csproj.CoreCompileInputs.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\obj\Debug\Article12.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article12\obj\Debug\Article12.pdb

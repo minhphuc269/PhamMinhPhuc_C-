@@ -1,0 +1,15 @@
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\bin\Debug\MainMenu.exe.config
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\bin\Debug\MainMenu.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\bin\Debug\MainMenu.pdb
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.csproj.AssemblyReference.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.Form1.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.Properties.Resources.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.Quanlinhanvien.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.csproj.GenerateResource.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.csproj.CoreCompileInputs.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.pdb
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.Login.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.Quanlisinhvien.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.Register.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\MainMenu\obj\Debug\MainMenu.Quanlinhansu.resources

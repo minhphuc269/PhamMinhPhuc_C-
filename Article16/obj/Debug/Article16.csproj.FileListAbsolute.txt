@@ -1,0 +1,10 @@
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\obj\Debug\Article16.csproj.AssemblyReference.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\obj\Debug\Article16.Form1.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\obj\Debug\Article16.Properties.Resources.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\obj\Debug\Article16.csproj.GenerateResource.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\obj\Debug\Article16.csproj.CoreCompileInputs.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\bin\Debug\Article16.exe.config
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\bin\Debug\Article16.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\bin\Debug\Article16.pdb
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\obj\Debug\Article16.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article16\obj\Debug\Article16.pdb
