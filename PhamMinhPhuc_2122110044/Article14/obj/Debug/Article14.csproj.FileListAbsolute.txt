@@ -1,0 +1,10 @@
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\bin\Debug\Article14.exe.config
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\bin\Debug\Article14.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\bin\Debug\Article14.pdb
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\obj\Debug\Article14.csproj.AssemblyReference.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\obj\Debug\Article14.Form1.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\obj\Debug\Article14.Properties.Resources.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\obj\Debug\Article14.csproj.GenerateResource.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\obj\Debug\Article14.csproj.CoreCompileInputs.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\obj\Debug\Article14.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article14\obj\Debug\Article14.pdb

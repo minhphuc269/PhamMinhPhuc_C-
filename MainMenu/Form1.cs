@@ -64,5 +64,11 @@ namespace MainMenu
             Quanlinhansu frmQuanlinhansu = new Quanlinhansu();
             frmQuanlinhansu.Show();
         }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
+

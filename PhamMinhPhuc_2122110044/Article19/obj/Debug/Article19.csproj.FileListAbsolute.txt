@@ -1,0 +1,10 @@
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\obj\Debug\Article19.csproj.AssemblyReference.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\obj\Debug\Article19.Properties.Resources.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\obj\Debug\Article19.csproj.GenerateResource.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\obj\Debug\Article19.csproj.CoreCompileInputs.cache
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\bin\Debug\Article19.exe.config
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\bin\Debug\Article19.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\bin\Debug\Article19.pdb
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\obj\Debug\Article19.Form1.resources
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\obj\Debug\Article19.exe
+C:\Phúc\C#\PhamMinhPhuc_2122110044\Article19\obj\Debug\Article19.pdb

@@ -15,47 +15,64 @@ namespace MainMenu
     public partial class Quanlinhanvien : Form
     {
         private List<NhanVien> danhSachNhanVien = new List<NhanVien>();
-
+        private string connectionString = "Server=MINHPHUC;Database=QuanLyNhanVien;User Id=sa;Password=sa;";
         public Quanlinhanvien()
         {
             InitializeComponent();
+            LoadData(); // Tải dữ liệu khi khởi động form
+        }
+
+        private void LoadData()
+        {
+            danhSachNhanVien.Clear();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand("SELECT * FROM NhanVien", connection);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    NhanVien nv = new NhanVien
+                    {
+                        MaNV = reader["MaNV"].ToString(),
+                        TenNV = reader["TenNV"].ToString(),
+                        Tuoi = Convert.ToInt32(reader["Tuoi"]),
+                        GioiTinh = reader["GioiTinh"].ToString()
+                    };
+                    danhSachNhanVien.Add(nv);
+                }
+            }
+            CapNhatDanhSach();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            // Kiểm tra dữ liệu đầu vào
             if (string.IsNullOrWhiteSpace(txtMa.Text) || string.IsNullOrWhiteSpace(txtTen.Text) || string.IsNullOrWhiteSpace(txtTuoi.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 return;
             }
 
-            // Kiểm tra tuổi hợp lệ
             if (!int.TryParse(txtTuoi.Text, out int tuoi))
             {
                 MessageBox.Show("Tuổi không hợp lệ!");
                 return;
             }
 
-            // Xác định giới tính
             string gioiTinh = checkBoxGioiTinh.Checked ? "Nam" : "Nữ";
 
-            // Tạo đối tượng nhân viên mới
-            NhanVien nv = new NhanVien
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                MaNV = txtMa.Text,
-                TenNV = txtTen.Text,
-                Tuoi = tuoi,
-                GioiTinh = gioiTinh
-            };
+                connection.Open();
+                SqlCommand command = new SqlCommand("INSERT INTO NhanVien (MaNV, TenNV, Tuoi, GioiTinh) VALUES (@MaNV, @TenNV, @Tuoi, @GioiTinh)", connection);
+                command.Parameters.AddWithValue("@MaNV", txtMa.Text);
+                command.Parameters.AddWithValue("@TenNV", txtTen.Text);
+                command.Parameters.AddWithValue("@Tuoi", tuoi);
+                command.Parameters.AddWithValue("@GioiTinh", gioiTinh);
+                command.ExecuteNonQuery();
+            }
 
-            // Thêm nhân viên vào danh sách
-            danhSachNhanVien.Add(nv);
-
-            // Cập nhật lại DataGridView
-            CapNhatDanhSach();
-
-            // Xóa các trường nhập liệu sau khi thêm
+            LoadData();
             ResetInputFields();
         }
 
@@ -66,14 +83,15 @@ namespace MainMenu
                 foreach (DataGridViewRow row in dataGridView1.SelectedRows)
                 {
                     string maNV = row.Cells[0].Value.ToString();
-                    var nv = danhSachNhanVien.Find(n => n.MaNV == maNV);
-                    if (nv != null)
+                    using (SqlConnection connection = new SqlConnection(connectionString))
                     {
-                        danhSachNhanVien.Remove(nv);
+                        connection.Open();
+                        SqlCommand command = new SqlCommand("DELETE FROM NhanVien WHERE MaNV = @MaNV", connection);
+                        command.Parameters.AddWithValue("@MaNV", maNV);
+                        command.ExecuteNonQuery();
                     }
                 }
-
-                CapNhatDanhSach();
+                LoadData();
             }
             else
             {
@@ -81,9 +99,32 @@ namespace MainMenu
             }
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void btnSua_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                var row = dataGridView1.SelectedRows[0];
+                string maNV = row.Cells[0].Value.ToString();
+                string gioiTinh = checkBoxGioiTinh.Checked ? "Nam" : "Nữ";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("UPDATE NhanVien SET TenNV = @TenNV, Tuoi = @Tuoi, GioiTinh = @GioiTinh WHERE MaNV = @MaNV", connection);
+                    command.Parameters.AddWithValue("@MaNV", maNV);
+                    command.Parameters.AddWithValue("@TenNV", txtTen.Text);
+                    command.Parameters.AddWithValue("@Tuoi", int.TryParse(txtTuoi.Text, out int tuoi) ? tuoi : (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@GioiTinh", gioiTinh);
+                    command.ExecuteNonQuery();
+                }
+
+                LoadData();
+                ResetInputFields();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn nhân viên để sửa!");
+            }
         }
 
         private void CapNhatDanhSach()
@@ -120,35 +161,6 @@ namespace MainMenu
             }
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            // Kiểm tra nếu có hàng nào được chọn
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                var row = dataGridView1.SelectedRows[0];
-                string maNV = row.Cells[0].Value.ToString();
-                var nv = danhSachNhanVien.Find(n => n.MaNV == maNV);
-
-                if (nv != null)
-                {
-                    // Cập nhật thông tin nhân viên
-                    nv.TenNV = txtTen.Text;
-                    nv.Tuoi = int.TryParse(txtTuoi.Text, out int tuoi) ? tuoi : nv.Tuoi;
-                    nv.GioiTinh = checkBoxGioiTinh.Checked ? "Nam" : "Nữ";
-
-                    // Cập nhật lại DataGridView
-                    CapNhatDanhSach();
-
-                    // Xóa các trường nhập liệu sau khi sửa
-                    ResetInputFields();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn nhân viên để sửa!");
-            }
-        }
-
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -166,7 +178,12 @@ namespace MainMenu
             }
         }
 
-        private void Quanlinhanvien_Load(object sender, EventArgs e)
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
@@ -179,4 +196,5 @@ namespace MainMenu
         public int Tuoi { get; set; }
         public string GioiTinh { get; set; }
     }
+
 }

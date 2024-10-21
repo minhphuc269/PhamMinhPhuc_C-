@@ -59,11 +59,5 @@ namespace MainMenu
         {
 
         }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Register frmRegister = new Register();
-            frmRegister.Show();
-        }
     }
 }
